@@ -29,7 +29,7 @@
     "semantic-release": "semantic-release",
     "start": "gatsby develop",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "deploy": "gatsby build && gh-pages -d public -b gh-pages"
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "bin": {
     "generatePostPreviewImages": "./scripts/generatePostPreviewImages.js"
