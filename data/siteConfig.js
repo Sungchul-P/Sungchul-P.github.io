@@ -1,30 +1,28 @@
 module.exports = {
-  siteTitle: 'gatsby-starter-morning-dew',
-  siteDescription: 'A Gatsby theme/starter to build lightning-fast websites',
-  authorName: 'Maxence Poutord',
-  twitterUsername: '_maxpou',
-  authorAvatar: 'avatar.jpeg', // file in content/images
+  siteTitle: "Devnori's Tech Blog",
+  siteDescription: '',
+  authorName: 'Sungchul Park',
+  twitterUsername: '',
+  authorAvatar: 'icon.png', // file in content/images
   defaultLang: 'en', // show flag if lang is not default. Leave empty to enable flags in post lists
   authorDescription: `
-  For the last decade, Maxence Poutord has worked with a variety of web technologies. He is currently focused on front-end development.
-  On his day to day job, he is working as a senior front-end engineer at VSware. He is also an occasional tech speaker and a mentor.
-  As a digital nomad, he is living where the WiFi and sun are 😎 <br>
-  Do you want to know more? <a href="https://www.maxpou.fr/about" target="_blank">Visit my website!</a>
+  배움을 멈추지 않고, 언젠가 넓고 깊은 지식을 갖게 되기를 꿈꾸고 있습니다! 🚀 <br>
+  또한 누군가에게 선한 영향력을 끼칠 수 있는 사람이 되기를 소망합니다 🌟
   `,
-  siteUrl: 'https://maxpou.github.io/',
-  disqusSiteUrl: 'https://www.maxpou.fr/',
+  siteUrl: 'https://Sungchul-P.github.io/',
+  disqusSiteUrl: '',
   // Prefixes all links. For cases when deployed to maxpou.fr/gatsby-starter-morning-dew/
-  pathPrefix: '/gatsby-starter-morning-dew', // Note: it must *not* have a trailing slash.
-  siteCover: 'cover-baymax.jpeg', // file in content/images
-  googleAnalyticsId: 'UA-67868977-1',
+  pathPrefix: '', // Note: it must *not* have a trailing slash.
+  siteCover: 'georgia.png', // file in content/images
+  googleAnalyticsId: '',
   background_color: '#ffffff',
   theme_color: '#222222',
   display: 'standalone',
-  icon: 'content/images/baymax.png',
+  icon: 'content/images/icon.png',
   postsPerPage: 6,
-  disqusShortname: 'maxpou',
-  headerTitle: 'gatsby-starter-morning-dew',
-  headerLinksIcon: 'baymax.png', //  (leave empty to disable: '')
+  disqusShortname: '',
+  headerTitle: "Devnori's Tech Blog",
+  headerLinksIcon: '', //  (leave empty to disable: '')
   headerLinks: [
     {
       label: 'Blog',
@@ -33,10 +31,6 @@ module.exports = {
     {
       label: 'About',
       url: '/about-gatsby-starter-morning-dew',
-    },
-    {
-      label: 'Installation',
-      url: '/how-to-install',
     },
   ],
   // Footer information (ex: Github, Netlify...)
@@ -56,10 +50,6 @@ module.exports = {
           label: 'About',
           url: '/about-gatsby-starter-morning-dew',
         },
-        {
-          label: 'Installation',
-          url: '/how-to-install',
-        },
       ],
     },
     {
@@ -67,15 +57,11 @@ module.exports = {
       links: [
         {
           label: 'GitHub',
-          url: 'https://github.com/maxpou/gatsby-starter-morning-dew',
+          url: 'https://github.com/Sungchul-P/Sungchul-P.github.io',
         },
         {
           label: 'Website',
-          url: 'https://www.maxpou.fr',
-        },
-        {
-          label: 'Twitter',
-          url: 'https://twitter.com/_maxpou',
+          url: 'https://Sungchul-P.github.io/',
         },
       ],
     },

@@ -28,7 +28,8 @@
     "lh": "lighthousebot",
     "semantic-release": "semantic-release",
     "start": "gatsby develop",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "deploy": "gatsby build && gh-pages -d public -b gh-pages"
   },
   "bin": {
     "generatePostPreviewImages": "./scripts/generatePostPreviewImages.js"
@@ -65,6 +66,7 @@
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "lighthousebot": "https://github.com/GoogleChromeLabs/lighthousebot",
     "prettier": "^2.0.5",
     "puppeteer": "^1.17.0",
