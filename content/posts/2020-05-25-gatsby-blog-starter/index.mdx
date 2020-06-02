@@ -100,7 +100,7 @@ package.json
 
 **`data/siteConfig.js`** 파일을 수정하여 블로그 구조 및 정보를 쉽게 변경할 수 있습니다.
 
-속성 하나씩 수정해가며 적용되는 부분을 확인해 봅시다.
+속성 하나씩 수정해가며 적용되는 부분을 확인해 봅시다. 저의 경우 아래와 같이 설정 파일은 아래와 같이 수정 했습니다.
 
 ```js
 module.exports = {
@@ -134,7 +134,7 @@ module.exports = {
     },
     {
       label: 'About',
-      url: '/about-gatsby-starter-morning-dew',
+      url: '/about-me',
     },
   ],
   // 페이지 하단 (Footer) 정보 (ex: Github ...)
@@ -152,7 +152,7 @@ module.exports = {
         },
         {
           label: 'About',
-          url: '/about-gatsby-starter-morning-dew',
+          url: '/about-me',
         },
       ],
     },
@@ -172,3 +172,71 @@ module.exports = {
   ],
 }
 ```
+
+추가로, **`content/pages/about`**(About 페이지 내용) 과 **`content/posts`**(블로그 포스트) 의 마크다운을 참고하여 지금 이 글을 작성하였습니다.
+
+> 상세한 구조 변경 및 마크다운 작성 내용은 [Github Repository](https://github.com/Sungchul-P/Sungchul-P.github.io)를 참고해 주세요.
+
+## Deploying to a GitHub Pages
+
+Gatsby 프로젝트를 배포하는 방법은 Netlify, Heroku, GitHub Pages 등 다양하게 지원하고 있습니다. ([https://www.gatsbyjs.org/docs/deploying-and-hosting](https://www.gatsbyjs.org/docs/deploying-and-hosting))
+
+사용해 본 경험이 있는 GitHub Pages를 이용하기로 했습니다. GitHub에서 제공하는 무료 정적 페이지 호스팅 서비스이므로 GitHub 레포지터리가 필요합니다.
+
+기본으로 제공하는 도메인은 "Username.github.io" 이고, 레포지터리를 도메인과 같은 이름으로 만들어서 진행했습니다. (필수는 아니므로 레포지터리 이름을 다르게 생성한 경우 Reference를 참고하여 진행하세요.)
+
+도메인과 레포지터리 이름을 같은 이름으로 생성하면, master 브랜치에 빌드 및 배포된 페이지를 기준으로 사이트가 렌더링 됩니다.
+
+개발 코드와 Gatsby 빌드 파일을 같은 브랜치에서 진행하면 프로젝트 구조가 복잡해지므로 별도의 브랜치를 생성해서 진행하는 것이 좋습니다.
+
+### GitHub Repository와 연동
+
+```bash{2}
+git init
+git remote add origin https://github.com/Sungchul-P/Sungchul-P.github.io
+
+# branch 생성
+git branch -m develop
+```
+
+### gh-pages 패키지 설치
+
+GitHub Pages 배포를 위해서는 gh-pages 패키지를 설치해야 합니다. (**`필수`**)
+
+```bash{1}
+npm install gh-pages --save-dev
+```
+
+### Deploy Script 추가 및 실행
+
+**`package.json`** 파일에 배포 스크립트를 추가하여 사용할 수 있습니다.
+
+```json{3}
+{
+  "scripts": {
+    "deploy": "gatsby build && gh-pages -d public -b master"
+  }
+}
+```
+
+npm 스크립트로 배포를 실행 합니다.
+
+```bash{1}
+npm run deploy
+
+# 배포 정상 완료된 경우, 아래 메시지를 확인할 수 있습니다.
+... (생략) ...
+info Done building in 11.916020379 sec
+Published
+```
+
+### 배포 및 렌더링된 페이지 확인
+
+[https://sungchul-p.github.io/](https://sungchul-p.github.io/)
+
+![gh-pages](./gh-pages.png)
+
+## Reference
+
+- [https://www.gatsbyjs.org/docs/how-gatsby-works-with-github-pages/](https://www.gatsbyjs.org/docs/how-gatsby-works-with-github-pages/)
+- [http://blog.naver.com/PostView.nhn?blogId=lyshyn&logNo=221527017383](http://blog.naver.com/PostView.nhn?blogId=lyshyn&logNo=221527017383)
