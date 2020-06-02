@@ -7,7 +7,7 @@ module.exports = {
   defaultLang: 'en', // show flag if lang is not default. Leave empty to enable flags in post lists
   authorDescription: `
   배움을 멈추지 않고, 언젠가 넓고 깊은 지식을 갖게 되기를 꿈꾸고 있습니다! 🚀 <br>
-  또한 누군가에게 선한 영향력을 끼칠 수 있는 사람이 되기를 소망합니다 🌟
+  또한 누군가에게 선한 영향력을 미칠 수 있는 사람이 되기를 소망합니다 🌟
   `,
   siteUrl: 'https://Sungchul-P.github.io/',
   disqusSiteUrl: '',
@@ -29,7 +29,7 @@ module.exports = {
     },
     {
       label: 'About',
-      url: '/about-gatsby-starter-morning-dew',
+      url: '/about-me',
     },
   ],
   // Footer information (ex: Github, Netlify...)
@@ -45,7 +45,7 @@ module.exports = {
         },
         {
           label: 'About',
-          url: '/about-gatsby-starter-morning-dew',
+          url: '/about-me',
         },
       ],
     },
