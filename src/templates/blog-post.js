@@ -6,7 +6,7 @@ import Hero from '../components/Hero'
 import Article from '../components/Article'
 import PrevNextPost from '../components/PrevNextPost'
 import SEO from '../components/SEO'
-import Disqus from '../components/Disqus'
+import Utterances from '../components/Utterances'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -25,23 +25,18 @@ class BlogPostTemplate extends React.Component {
           path={post.frontmatter.slug}
           isBlogPost
         />
-
         <Hero
           heroImg={post.frontmatter.cover && post.frontmatter.cover.publicURL}
           title={post.frontmatter.title}
         />
-
         <Wrapper>
-          <Article post={post} />
+          <Article post={post} />{' '}
         </Wrapper>
-
         <Wrapper>
-          <Disqus slug={post.frontmatter.slug} title={post.frontmatter.title} />
+          <Utterances />
         </Wrapper>
-
-        {/* <Wrapper> */}
-        <PrevNextPost previous={previous} next={next} />
-        {/* </Wrapper> */}
+        {/* <Wrapper> */} <PrevNextPost previous={previous} next={next} />{' '}
+        {/* </Wrapper> */}{' '}
       </Layout>
     )
   }

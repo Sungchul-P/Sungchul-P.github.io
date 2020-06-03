@@ -10,7 +10,6 @@ module.exports = {
   또한 누군가에게 선한 영향력을 미칠 수 있는 사람이 되기를 소망합니다 🌟
   `,
   siteUrl: 'https://Sungchul-P.github.io/',
-  disqusSiteUrl: '',
   // Prefixes all links. For cases when deployed to maxpou.fr/gatsby-starter-morning-dew/
   pathPrefix: '', // Note: it must *not* have a trailing slash.
   siteCover: 'georgia.png', // file in content/images
@@ -20,7 +19,7 @@ module.exports = {
   display: 'standalone',
   icon: 'content/images/icon.png',
   postsPerPage: 6,
-  disqusShortname: '',
+  utterancesRepo: 'sungchul-p/blog-comments',
   headerTitle: "Devnori's Tech Blog",
   headerLinksIcon: '', //  (leave empty to disable: '')
   headerLinks: [{
