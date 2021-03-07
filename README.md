@@ -1,14 +1,6 @@
-[![Build Status](https://travis-ci.org/maxpou/gatsby-starter-morning-dew.svg?branch=master)](https://travis-ci.org/maxpou/gatsby-starter-morning-dew) [![Netlify Status](https://api.netlify.com/api/v1/badges/d68027bd-19b5-44fd-a2a3-d1f05fc8201e/deploy-status)](https://app.netlify.com/sites/gatsby-starter-morning-dew/deploys) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![Maintainability](https://api.codeclimate.com/v1/badges/e09f1ac1a5cdb2987a6f/maintainability)](https://codeclimate.com/github/maxpou/gatsby-starter-morning-dew/maintainability) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+# Overview
 
-
-# gatsby-starter-morning-dew
-
-:rocket: A gatsby-starter-morning-dew is a Gatsby starter to build lightning-fast websites!  
-:dizzy: You can also use gatsby-starter-morning-dew as a Gatsby Theme
-
-[Demo website.](https://maxpou.github.io/gatsby-starter-morning-dew/)
-
-![screenshot](https://i.imgur.com/nPthSQy.png)
+본 블로그는 [gatsby-starter-morning-dew](https://github.com/maxpou/gatsby-starter-morning-dew)를 fork 하여 생성한 Gatsby 블로그입니다.
 
 ## Features
 
@@ -20,7 +12,7 @@
 - :iphone: Mobile Friendly (Responsive design)
 - :sparkles: PWA ready
   - :airplane: Offline support
-  - :page_with_curl: Manifest support 
+  - :page_with_curl: Manifest support
 - [:wrench: Fully configurable (see data/siteConfig.js)](./data/siteConfig.js)
 - :speech_balloon: Disqus support
 - :nail_care: css-in-js (with [styled-components v5](https://www.styled-components.com))
@@ -31,69 +23,6 @@
   - eslint
   - prettier
 - :construction_worker: Travis CI support
-
-
-![Lighthouse scores (locally :bowtie:)](https://lighthouse.now.sh/?perf=100&pwa=100&a11y=100&bp=100&seo=100)
-
-## Installation (starter)
-
-* with Gatsby-cli: 
-  
-```bash
-npm install --global gatsby-cli
-gatsby new gatsby-blog https://github.com/maxpou/gatsby-starter-morning-dew
-```
-
-* without Gatsby-cli
-
-```bash
-git clone my-site git@github.com:maxpou/gatsby-starter-morning-dew.git
-cd my-site
-npm install
-```
-
-Then run `npm run develop` to try it locally.
-
-
-## Installation (theme)
-
-You can also use `gatsby-starter-morning-dew` as a [Gatsby theme](https://www.gatsbyjs.org/blog/2018-11-11-introducing-gatsby-themes/)!
-
-1. Add the theme
-  ```bash
-  npm install gatsby-starter-morning-dew
-  ```
-2. In your `gatsby-config.js`, add:
-  ```js
-  const config = require('./data/siteConfig')
-  // ...
-  plugins: [
-      {
-        resolve: "gatsby-starter-morning-dew",
-        options: {},
-      },
-      {
-        resolve: `gatsby-plugin-manifest`,
-        options: {
-          name: config.siteTitle,
-          short_name: config.siteTitle,
-          start_url: config.pathPrefix,
-          background_color: config.background_color,
-          theme_color: config.theme_color,
-          display: config.display,
-          icon: 'content/images/company-icon.png', // path to your image
-        },
-      },
-  ],
-  ```
-3. Add an image called `baymax.png` in `content/images/baymax.png`.  
-🐞This is due to a theme limitations.  
-😬 Don't worry, this picture will not appear on your website!
-
-Need more details? Checkout:
-* [maxpou.fr source](https://github.com/maxpou/maxpou.fr): Maxence Poutord's personnal blog;
-* [gatsby-groot source](https://github.com/maxpou/gatsby-groot/): a minimalist blog that use this template!
-
 
 ## Commands
 
@@ -118,34 +47,33 @@ npm run generatePostPreviewImages
 
 ## Configure
 
+data/siteConfig.js
+
 ```js
 module.exports = {
-  siteTitle: 'gatsby-starter-morning-dew',
-  siteDescription: 'A Gatsby theme/starter to build lightning-fast websites',
-  authorName: 'Maxence Poutord',
-  twitterUsername: '_maxpou',
-  authorAvatar: 'avatar.jpeg', // file in content/images
+  siteTitle: "Devnori's Tech Blog",
+  siteDescription: '',
+  authorName: 'Sungchul Park',
+  twitterUsername: '',
+  authorAvatar: 'icon.png', // file in content/images
   defaultLang: 'en', // show flag if lang is not default. Leave empty to enable flags in post lists
   authorDescription: `
-  For the last decade, Maxence Poutord has worked with a variety of web technologies. He is currently focused on front-end development.
-  On his day to day job, he is working as a senior front-end engineer at VSware. He is also a frequent tech speaker and a mentor.
-  As a new digital nomad, he is living where the WIFI and sun is 😎 <br>
-  Do you want to know more? <a href="https://www.maxpou.fr/about" target="_blank">Visit my website!</a>
+  배움을 멈추지 않고, 언젠가 넓고 깊은 지식을 갖게 되기를 꿈꾸고 있습니다! 🚀 <br>
+  또한 누군가에게 선한 영향력을 미칠 수 있는 사람이 되기를 소망합니다 🌟
   `,
-  siteUrl: 'https://maxpou.github.io/',
-  disqusSiteUrl: 'https://www.maxpou.fr/',
+  siteUrl: 'https://Sungchul-P.github.io/',
   // Prefixes all links. For cases when deployed to maxpou.fr/gatsby-starter-morning-dew/
-  pathPrefix: '/gatsby-starter-morning-dew', // Note: it must *not* have a trailing slash.
-  siteCover: 'cover-baymax.jpeg', // file in content/images
-  googleAnalyticsId: 'UA-67868977-1',
+  pathPrefix: '', // Note: it must *not* have a trailing slash.
+  siteCover: 'georgia.png', // file in content/images
+  googleAnalyticsId: '',
   background_color: '#ffffff',
   theme_color: '#222222',
   display: 'standalone',
-  icon: 'content/images/baymax.png',
+  icon: 'content/images/icon.png',
   postsPerPage: 6,
-  disqusShortname: 'maxpou',
-  headerTitle: 'gatsby-starter-morning-dew',
-  headerLinksIcon: 'baymax.png', // file in content/images (leave empty to disable: '')
+  utterancesRepo: 'sungchul-p/blog-comments',
+  headerTitle: "Devnori's Tech Blog",
+  headerLinksIcon: '', //  (leave empty to disable: '')
   headerLinks: [
     {
       label: 'Blog',
@@ -153,11 +81,7 @@ module.exports = {
     },
     {
       label: 'About',
-      url: '/about-gatsby-starter-morning-dew',
-    },
-    {
-      label: 'Installation',
-      url: '/how-to-install',
+      url: '/about-me',
     },
   ],
   // Footer information (ex: Github, Netlify...)
@@ -175,11 +99,7 @@ module.exports = {
         },
         {
           label: 'About',
-          url: '/about-gatsby-starter-morning-dew',
-        },
-        {
-          label: 'Installation',
-          url: '/how-to-install',
+          url: '/about-me',
         },
       ],
     },
@@ -187,23 +107,15 @@ module.exports = {
       sectionName: 'Follow the author',
       links: [
         {
-          label: 'Github',
-          url: 'https://github.com/maxpou/gatsby-starter-morning-dew',
+          label: 'GitHub',
+          url: 'https://github.com/Sungchul-P/Sungchul-P.github.io',
         },
         {
           label: 'Website',
-          url: 'https://www.maxpou.fr',
-        },
-        {
-          label: 'Twitter',
-          url: 'https://twitter.com/_maxpou',
+          url: 'https://Sungchul-P.github.io/',
         },
       ],
     },
   ],
 }
 ```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/maxpou/gatsby-starter-morning-dew)
