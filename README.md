@@ -28,10 +28,13 @@
 
 ```sh
 # working locally
-npm run dev
+npm run develop
 
 # generate build
 npm run build
+
+# deploy GH-pages
+npm run develop
 
 # format code
 npm run format
