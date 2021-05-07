@@ -34,7 +34,7 @@ npm run develop
 npm run build
 
 # deploy GH-pages
-npm run develop
+npm run deploy
 
 # format code
 npm run format
