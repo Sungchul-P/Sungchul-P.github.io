@@ -90,6 +90,8 @@ ALB와 사용자 사이에 CloudFront와 Lambda@Edge가 위치시켜 사용자�
 - 사용자 브라우저에서 전달된 쿠키에 토큰이 없으면 새로 발급하여 DynamoDB에 저장하고 사용량이 많은 경우 요청을 제어합니다.
 - 발급된 토큰을 사용자 브라우저가 유지할 수 있도록 응답(Response) 헤더에 쿠키값을 설정해서 전달합니다.
 
+![aws-serverless-architecture-12](./aws-serverless-architecture-12.png)
+
 ### Heartbeat 처리 (AWS S3, API Gateway, Lambda)
 
 사용자가 브라우저에서 사이트에 접속한 상태인지 체크하기 위해 5초 간격으로 heartbeat를 수집합니다.
@@ -155,6 +157,6 @@ AWS DNA 프로그램을 통해 진행된 첫 번째 세션과 실습임에도 �
 ## 참고 자료
 
 - [Peak Load Control with Serverless](https://hackmd.io/oJlsK5q0R9W8Pa0piY3v-w)
-- [Seasonality](https://support.google.com/admanager/answer/9544845?hl=en)
+- [Google Ad Manager - Seasonality](https://support.google.com/admanager/answer/9544845?hl=en)
 - [천만 사용자를 위한 클라우드 아키텍처, 5년간의 여정](https://aws.amazon.com/ko/blogs/korea/5-years-scalling-up-to-10-million-users/)
 - [천만사용자를 위한 AWS 클라우드 아키텍처 진화하기 – 문종민, AWS솔루션즈 아키텍트:: AWS Summit Online Korea 2020](https://www.youtube.com/watch?v=z68l2X5KoC4)
