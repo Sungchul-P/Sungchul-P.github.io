@@ -182,6 +182,8 @@ Data Product 간 데이터 공유 권한은 Lake Formation을 통해서 테이�
 
 ### JPMorgan Chase 사례
 
+![morgan-data-mesh](./morgan-data-mesh.png)
+
 그림 좌측이 소비자 금융, 그림 우측이 상업 금융 조직이고 두 조직은 각각의 데이터 레이크를 별도로 가지고 있습니다.
 
 그리고 모든 금융사들이 그렇듯이 민감 데이터에 대한 관리가 매우 중요한데, 이를 Lake Formation에서 제공하는 태그를 통해서 관리하고 있습니다.
@@ -189,8 +191,6 @@ Data Product 간 데이터 공유 권한은 Lake Formation을 통해서 테이�
 양쪽 조직은 외부에 공개해도 되는 데이터를 Public으로, 공개하면 안되는 데이터를 Sensitive로 태깅하고 각각의 로컬 Lake Formation에 등록해 두었습니다.
 
 그리고 중앙의 센트럴 Lake Formation 계정에서 각각의 Data Product를 연결하고 권한을 제어하는 역할을 하고 있습니다.
-
-![morgan-data-mesh](./morgan-data-mesh.png)
 
 ## 요약 및 마무리
 
