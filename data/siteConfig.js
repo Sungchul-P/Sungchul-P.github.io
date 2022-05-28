@@ -11,7 +11,7 @@ module.exports = {
   `,
   siteUrl: 'https://Sungchul-P.github.io/',
   // Prefixes all links. For cases when deployed to maxpou.fr/gatsby-starter-morning-dew/
-  pathPrefix: '', // Note: it must *not* have a trailing slash.
+  pathPrefix: '/', // Note: it must *not* have a trailing slash.
   siteCover: 'georgia.png', // file in content/images
   googleAnalyticsId: 'G-F68KCEBSGZ',
   background_color: '#ffffff',
@@ -22,7 +22,8 @@ module.exports = {
   utterancesRepo: 'sungchul-p/blog-comments',
   headerTitle: "Devnori's Tech Blog",
   headerLinksIcon: '', //  (leave empty to disable: '')
-  headerLinks: [{
+  headerLinks: [
+    {
       label: 'Blog',
       url: '/',
     },
@@ -36,9 +37,11 @@ module.exports = {
     name: 'GitHub',
     url: 'https://github.com',
   },
-  footerLinks: [{
+  footerLinks: [
+    {
       sectionName: 'Explore',
-      links: [{
+      links: [
+        {
           label: 'Blog',
           url: '/',
         },
@@ -50,7 +53,8 @@ module.exports = {
     },
     {
       sectionName: 'Follow the author',
-      links: [{
+      links: [
+        {
           label: 'GitHub',
           url: 'https://github.com/Sungchul-P/Sungchul-P.github.io',
         },
