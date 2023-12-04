@@ -27,6 +27,9 @@
 ## Commands
 
 ```sh
+# node v15.14.0
+npm install
+
 # working locally
 npm run develop
 
