@@ -5,13 +5,8 @@ import useSiteMetadata from '../hooks/use-site-config'
 
 const SEO = props => {
   const { isBlogPost, path = '', lang = 'en' } = props
-  const {
-    siteTitle,
-    siteUrl,
-    siteCover,
-    siteDescription,
-    twitterUsername,
-  } = useSiteMetadata()
+  const { siteTitle, siteUrl, siteCover, siteDescription, twitterUsername } =
+    useSiteMetadata()
 
   const title = props.title
     ? `${props.title} | ${siteTitle}`

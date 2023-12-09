@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react'
 
-const PANELBEAR_SITE_ID = "AVlbX7MNoAU";
+const PANELBEAR_SITE_ID = 'AVlbX7MNoAU'
 
 const PANELBEAR_CONFIG = {
   site: PANELBEAR_SITE_ID,
-  spaMode: "history",
+  spaMode: 'history',
   debug: false,
-};
+}
 
 export const onRenderBody = ({ setPostBodyComponents }) => {
   setPostBodyComponents([
@@ -24,5 +24,5 @@ export const onRenderBody = ({ setPostBodyComponents }) => {
         `,
       }}
     />,
-  ]);
-};
+  ])
+}
